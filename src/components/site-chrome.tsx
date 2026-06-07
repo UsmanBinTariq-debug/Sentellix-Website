@@ -16,7 +16,7 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-2" aria-label={site.name}>
-          <img src={logoDark} alt={`${site.name} logo`} className="h-9 w-auto" />
+          <img src={logoDark} alt={`${site.name} logo`} className="h-18 w-auto" />
         </Link>
         <nav className="hidden items-center gap-7 md:flex">
           {nav.map((n) => (
@@ -47,7 +47,7 @@ export function Footer() {
     <footer className="border-t border-border bg-navy text-navy-foreground">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-12 md:flex-row md:items-center md:justify-between">
         <div>
-          <img src={logoLight} alt={`${site.name} logo`} className="h-12 w-auto" />
+          <img src={logoLight} alt={`${site.name} logo`} className="h-40 w-auto" />
           <p className="mt-3 max-w-md text-sm text-navy-muted">{site.tagline}</p>
         </div>
         <div className="flex flex-wrap gap-6 text-sm text-navy-muted">

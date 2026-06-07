@@ -1,10 +1,5 @@
 {
   "name": "Sentellix",
   "tagline": "AI systems that actually work for SMBs",
-  "email": "hello@sentellix.com",
-  "emailjs": {
-    "serviceId": "YOUR_SERVICE_ID",
-    "templateId": "YOUR_TEMPLATE_ID",
-    "publicKey": "YOUR_PUBLIC_KEY"
-  }
+  "email": "contact@sentellix.com"
 }

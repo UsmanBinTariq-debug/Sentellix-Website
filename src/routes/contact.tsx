@@ -51,9 +51,11 @@ function ContactPage() {
     setError("");
     setStatus("sending");
     try {
-      const { serviceId, templateId, publicKey } = site.emailjs;
-      if (!serviceId || serviceId.startsWith("YOUR_")) {
-        throw new Error("EmailJS is not configured yet. Update src/data/site.json with your EmailJS credentials.");
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+      if (!serviceId || serviceId.startsWith("VITE_")) {
+        throw new Error("EmailJS is not configured yet. Update .env.local with your EmailJS credentials.");
       }
       await emailjs.send(
         serviceId,
