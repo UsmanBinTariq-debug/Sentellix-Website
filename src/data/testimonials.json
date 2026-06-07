@@ -1,0 +1,34 @@
+{
+  "title": "What clients say",
+  "subtitle": "Real results from real businesses we have worked with.",
+  "items": [
+    {
+      "name": "Maria Alvarez",
+      "role": "Owner, Bloom Hair Studio",
+      "location": "Austin, TX",
+      "quote": "Sentellix rebuilt our entire booking and reminder flow. No-shows dropped by 40 percent in the first month and I got my evenings back.",
+      "rating": 5
+    },
+    {
+      "name": "James Carter",
+      "role": "Realtor",
+      "location": "Manchester, UK",
+      "quote": "Their AI follow-up system contacted 60 cold leads I had given up on. Two of them closed within six weeks. That alone paid for the year.",
+      "rating": 5
+    },
+    {
+      "name": "Priya Shah",
+      "role": "Brokerage owner",
+      "location": "Dallas, TX",
+      "quote": "What I appreciated most was the honesty. They told us we did not need a custom agent, just a smarter automation. It saved us thousands.",
+      "rating": 5
+    },
+    {
+      "name": "Sophie Bennett",
+      "role": "Salon manager",
+      "location": "London, UK",
+      "quote": "Setup was painless and the handover documentation is genuinely good. We run the system ourselves now and it just works.",
+      "rating": 5
+    }
+  ]
+}

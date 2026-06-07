@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "eyebrow": "AI Integration Partner for SMBs",
+    "title": "We don't sell AI strategy. We build AI systems that work.",
+    "subtitle": "Sentellix helps small and mid-size businesses in the US and UK eliminate manual, time-wasting workflows by integrating practical AI solutions that deliver real, measurable results.",
+    "primaryCta": { "label": "Book a free workflow audit", "href": "/contact" },
+    "secondaryCta": { "label": "See our work", "href": "/portfolio" }
+  },
+  "stats": [
+    { "value": "55%", "label": "of SMBs adopted AI in 2025" },
+    { "value": "917 min", "label": "average lead response time we replace with 60 seconds" },
+    { "value": "10-15 hrs", "label": "per week recovered for typical clients" }
+  ],
+  "services": [
+    {
+      "title": "AI Receptionist and Lead Response",
+      "description": "Inbound calls answered, missed calls texted back, leads contacted in under 60 seconds. Built on your tools, trained on your business."
+    },
+    {
+      "title": "Follow-up and Re-engagement Sequences",
+      "description": "Multi-week automations that recover no-shows, rebook clients, and warm up cold leads without a single manual reminder."
+    },
+    {
+      "title": "Workflow Automation",
+      "description": "From bookings to reviews to CRM hygiene, we map the workflow, build the system, document it, and hand it over."
+    },
+    {
+      "title": "Custom AI Agents",
+      "description": "When off-the-shelf tools fall short, we build agents that read, write, and act inside your stack."
+    }
+  ],
+  "values": [
+    {
+      "title": "Workflows first, tools second",
+      "description": "We map before we build. No solution gets proposed until we understand how the business actually operates."
+    },
+    {
+      "title": "Results over reports",
+      "description": "We measure success in time saved and revenue recovered, not slides delivered or hours billed."
+    },
+    {
+      "title": "Honest scoping",
+      "description": "We tell clients what they need, not what sounds impressive. If a simple automation solves it, we won't sell a custom agent."
+    },
+    {
+      "title": "Owned outcomes",
+      "description": "Every system we build belongs to the client. Full documentation, full handover, and a clean engagement model."
+    }
+  ],
+  "process": [
+    { "step": "01", "title": "Workflow audit", "description": "We sit with you, map the manual work, and identify what AI can realistically remove." },
+    { "step": "02", "title": "Scoped proposal", "description": "A flat-fee plan with exact outcomes, timelines, and tools. No vague retainers." },
+    { "step": "03", "title": "Build and test", "description": "We build inside your stack, test against real scenarios, and iterate until it just works." },
+    { "step": "04", "title": "Handover and support", "description": "You get full documentation. Optional retainer keeps the system evolving as your business grows." }
+  ],
+  "founding": "Sentellix was born from a simple observation: AI is transforming how businesses operate, but most small and mid-size businesses are being left behind. Not because they don't want it, but because the people selling it are making it too complicated and too expensive. Two founders, one clear mission; bridge that gap before someone else does. We are not here to consult, we are here to build.",
+  "finalCta": {
+    "title": "Ready to stop drowning in manual work?",
+    "subtitle": "Tell us about your biggest workflow bottleneck. If we can't help, we'll tell you straight.",
+    "label": "Start the conversation"
+  }
+}
