@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Hard-pin Vercel as the Nitro build target so the output is
+  // compatible with Vercel's serverless infrastructure.
+  nitro: { preset: "vercel" },
 });
