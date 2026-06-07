@@ -1,0 +1,42 @@
+{
+  "title": "Selected work",
+  "subtitle": "Systems we have built, the problems they solved, and the outcomes they produced.",
+  "items": [
+    {
+      "title": "AI Receptionist for a 6-chair salon",
+      "client": "Bloom Hair Studio",
+      "industry": "Hair and Beauty",
+      "summary": "Custom AI phone agent that handles bookings, FAQs, and missed-call text-back, integrated with Vagaro.",
+      "outcomes": [
+        "40% drop in no-shows in 30 days",
+        "12 hours per week recovered",
+        "Google reviews up 3x"
+      ],
+      "stack": ["Twilio", "OpenAI", "Vagaro", "n8n"]
+    },
+    {
+      "title": "Lead response engine for a solo realtor",
+      "client": "James Carter Realty",
+      "industry": "Real Estate",
+      "summary": "Sub-60-second AI response to Zillow and Realtor.com leads, with a 14-day nurture sequence for cold leads.",
+      "outcomes": [
+        "Average response time cut from 11 hours to 38 seconds",
+        "2 closings from previously dead leads",
+        "Built on existing Follow Up Boss"
+      ],
+      "stack": ["Follow Up Boss", "Twilio", "OpenAI", "Make"]
+    },
+    {
+      "title": "Review and rebook automation",
+      "client": "Sophie's Salon",
+      "industry": "Hair and Beauty",
+      "summary": "Post-appointment review request and 6-week rebook nudge sequence with smart timing.",
+      "outcomes": [
+        "Review volume up 5x",
+        "Rebook rate from 32% to 58%",
+        "Zero manual sends"
+      ],
+      "stack": ["GoHighLevel", "Twilio"]
+    }
+  ]
+}
