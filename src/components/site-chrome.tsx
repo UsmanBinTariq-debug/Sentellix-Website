@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import site from "@/data/site.json";
+import logoDark from "@/assets/logo-dark.png";
+import logoLight from "@/assets/logo-light.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -13,9 +15,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold tracking-tight">
-          <span className="inline-block h-2.5 w-2.5 rounded-full bg-accent" />
-          {site.name}
+        <Link to="/" className="flex items-center gap-2" aria-label={site.name}>
+          <img src={logoDark} alt={`${site.name} logo`} className="h-9 w-auto" />
         </Link>
         <nav className="hidden items-center gap-7 md:flex">
           {nav.map((n) => (
@@ -46,11 +47,8 @@ export function Footer() {
     <footer className="border-t border-border bg-navy text-navy-foreground">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-12 md:flex-row md:items-center md:justify-between">
         <div>
-          <div className="flex items-center gap-2 font-display text-lg font-bold">
-            <span className="inline-block h-2.5 w-2.5 rounded-full bg-accent" />
-            {site.name}
-          </div>
-          <p className="mt-2 max-w-md text-sm text-navy-muted">{site.tagline}</p>
+          <img src={logoLight} alt={`${site.name} logo`} className="h-12 w-auto" />
+          <p className="mt-3 max-w-md text-sm text-navy-muted">{site.tagline}</p>
         </div>
         <div className="flex flex-wrap gap-6 text-sm text-navy-muted">
           {nav.map((n) => (
