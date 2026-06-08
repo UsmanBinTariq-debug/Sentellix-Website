@@ -1,7 +1,17 @@
 import { Link } from "@tanstack/react-router";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import site from "@/data/site.json";
 import logoDark from "@/assets/logo-dark.png";
 import logoLight from "@/assets/logo-light.png";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -12,12 +22,17 @@ const nav = [
 ];
 
 export function Header() {
+  const [open, setOpen] = useState(false);
+  const isMobile = useIsMobile();
+
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-2" aria-label={site.name}>
           <img src={logoDark} alt={`${site.name} logo`} className="h-18 w-auto" />
         </Link>
+        
+        {/* Desktop Navigation */}
         <nav className="hidden items-center gap-7 md:flex">
           {nav.map((n) => (
             <Link
@@ -31,12 +46,55 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <Link
-          to="/contact"
-          className="inline-flex items-center rounded-md bg-navy px-4 py-2 text-sm font-medium text-navy-foreground transition-opacity hover:opacity-90"
-        >
-          Contact
-        </Link>
+
+        {/* Mobile Menu Button */}
+        {isMobile ? (
+          <>
+            <Sheet open={open} onOpenChange={setOpen}>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setOpen(true)}
+                className="md:hidden"
+              >
+                <Menu className="h-5 w-5" />
+              </Button>
+              <SheetContent side="right" className="w-64">
+                <SheetHeader>
+                  <SheetTitle>Navigation</SheetTitle>
+                </SheetHeader>
+                <nav className="flex flex-col gap-4 mt-6">
+                  {nav.map((n) => (
+                    <Link
+                      key={n.to}
+                      to={n.to}
+                      onClick={() => setOpen(false)}
+                      className="text-sm text-muted-foreground transition-colors hover:text-foreground py-2"
+                      activeProps={{ className: "text-foreground font-medium" }}
+                      activeOptions={{ exact: n.to === "/" }}
+                    >
+                      {n.label}
+                    </Link>
+                  ))}
+                  <Link
+                    to="/contact"
+                    onClick={() => setOpen(false)}
+                    className="inline-flex items-center rounded-md bg-navy px-4 py-2 text-sm font-medium text-navy-foreground transition-opacity hover:opacity-90 mt-4"
+                  >
+                    Contact
+                  </Link>
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </>
+        ) : (
+          <Link
+            to="/contact"
+            className="inline-flex items-center rounded-md bg-navy px-4 py-2 text-sm font-medium text-navy-foreground transition-opacity hover:opacity-90"
+          >
+            Contact
+          </Link>
+        )}
       </div>
     </header>
   );
