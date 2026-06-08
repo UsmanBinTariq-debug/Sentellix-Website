@@ -36,7 +36,7 @@ function TestimonialsPage() {
               <p className="mt-4 text-lg leading-relaxed text-foreground">"{t.quote}"</p>
               <div className="mt-6 border-t border-border pt-4">
                 <div className="font-semibold">{t.name}</div>
-                <div className="text-sm text-muted-foreground">{t.role} - {t.location}</div>
+                <div className="text-sm text-muted-foreground">{t.role}, {t.location}</div>
               </div>
             </article>
           ))}
