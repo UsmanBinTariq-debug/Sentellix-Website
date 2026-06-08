@@ -1,26 +1,26 @@
 {
-  "title": "Selected work",
-  "subtitle": "Systems we have built, the problems they solved, and the outcomes they produced.",
+  "title": "Selected Work",
+  "subtitle": "Real systems. Real results. Here's what we've built and what it did.",
   "items": [
     {
       "title": "Missed Call Text-Back System",
       "industry": "Hair and Beauty",
-      "summary": "Missed a call? An SMS goes out within 60 seconds saying hey, we're sorry, book online or text us back. Captures leads that would otherwise go to the competition.",
-      "outcomes": ["Recovers lost bookings"],
+      "summary": "When a call goes unanswered, an SMS fires within 60 seconds; apologizing, offering a booking link, and inviting a reply. Leads that would have called the next salon book with you instead.",
+      "outcomes": ["Captures lost bookings automatically"],
       "stack": ["Make.com", "Twilio"],
       "priority": "high"
     },
     {
       "title": "No-Show Recovery Automation",
       "industry": "Hair and Beauty",
-      "summary": "Client didn't show up? Texts go out immediately, again the next day, then a rebook offer 3 days later. If they still don't book, a special discount offer kicks in after a week.",
+      "summary": "No-show? An immediate text goes out. Another follows the next day. A rebook offer fires on day 3. A discount kicks in on day 7 if they still haven't booked. Recovers 20-30% of clients you'd otherwise lose for good.",
       "outcomes": ["Recovers 20-30% of no-shows"],
       "stack": ["Make.com", "Twilio", "Vagaro API"]
     },
     {
       "title": "Automated Review Request System",
       "industry": "Hair and Beauty",
-      "summary": "Two hours after their appointment, they get a text asking for a Google review with a direct link. No review in 48 hours? A friendly follow-up reminder goes out. Gets 3-5x more reviews than asking in person.",
+      "summary": "Two hours after every appointment, a text goes out with a direct Google review link. No response in 48 hours? A follow-up fires automatically. Salons using this see 3-5x more reviews than asking in person.",
       "outcomes": ["3-5x more Google reviews"],
       "stack": ["Make.com", "Twilio"],
       "priority": "high"
@@ -28,116 +28,116 @@
     {
       "title": "Appointment Reminder Sequence",
       "industry": "Hair and Beauty",
-      "summary": "Two days before and two hours before each appointment, they get a text. They can confirm or cancel right there. Cancel? They get an instant rebook offer and your stylist knows to find someone else for that slot.",
-      "outcomes": ["Reduces no-shows by 40%"],
+      "summary": "Clients get a reminder 48 hours out and again 2 hours before. They confirm or cancel with one tap. Cancellations trigger an instant rebook offer, and notify the stylist to fill the slot before it's wasted.",
+      "outcomes": ["Reduces no-shows by up to 40%"],
       "stack": ["Make.com", "Fresha/Vagaro"]
     },
     {
       "title": "Win-Back Campaign for Inactive Clients",
       "industry": "Hair and Beauty",
-      "summary": "Someone hasn't booked in 60 days? They get a text saying we miss them, here's 15% off your next visit with a booking link. Runs automatically every month on autopilot.",
-      "outcomes": ["Reactivates lapsed clients"],
+      "summary": "Any client who hasn't booked in 60 days gets a personalized text: a we-miss-you message and a 15% off offer with a direct booking link. Runs every month on autopilot. Zero manual work.",
+      "outcomes": ["Reactivates lapsed clients on autopilot"],
       "stack": ["Make.com", "Airtable"]
     },
     {
-      "title": "AI Receptionist - Inbound Call Handling",
+      "title": "AI Receptionist — Inbound Call Handling",
       "industry": "Hair and Beauty",
-      "summary": "AI picks up every call 24/7, answers questions about hours and pricing, books appointments directly into your system, and texts a confirmation. It knows your services and staff inside out.",
-      "outcomes": ["Answers 100% of calls"],
+      "summary": "AI answers every call 24/7: handles pricing questions, checks availability, books appointments directly into the system, and texts a confirmation. Trained on your exact services and staff. You never miss a booking again.",
+      "outcomes": ["100% of calls answered", "Bookings captured after hours"],
       "stack": ["VAPI", "ElevenLabs", "Make.com"]
     },
     {
       "title": "New Client Welcome Sequence",
       "industry": "Hair and Beauty",
-      "summary": "When a new client books for the first time, an automated 3-message sequence fires over 7 days: welcome message, pre-appointment tips, and a post-visit check-in with a review request.",
-      "outcomes": ["Increases retention"],
+      "summary": "First-time booking? A 3-message sequence runs automatically over 7 days: a warm welcome, pre-appointment tips, and a post-visit check-in that asks for a review. Turns one-time visitors into regulars.",
+      "outcomes": ["Higher first-visit retention"],
       "stack": ["Make.com", "Twilio"]
     },
     {
       "title": "Instagram DM Auto-Response for Bookings",
       "industry": "Hair and Beauty",
-      "summary": "When a potential client DMs the salon's Instagram asking about availability or pricing, AI auto-responds with relevant info and a booking link. Captures leads from social that currently get lost.",
+      "summary": "Someone DMs asking about pricing or availability? AI replies instantly with the right info and a booking link, at any hour. Converts social media interest into booked appointments instead of ignored messages.",
       "outcomes": ["Converts social DMs to bookings"],
       "stack": ["ManyChat", "Make.com"]
     },
     {
       "title": "Speed-to-Lead AI Response System",
       "industry": "Real Estate",
-      "summary": "Lead comes in from Zillow? An AI SMS goes out in 60 seconds about that exact property, asks if they're pre-approved and on a timeline, then routes serious buyers straight to you.",
-      "outcomes": ["21x higher conversion"],
+      "summary": "New Zillow lead? An AI SMS fires in under 60 seconds, referencing the exact property, asking about pre-approval and timeline, and routing serious buyers directly to you. Leads contacted in under 5 minutes are 21x more likely to convert.",
+      "outcomes": ["60-second lead response", "21x higher conversion rate"],
       "stack": ["Make.com", "OpenAI", "Twilio"],
       "priority": "high"
     },
     {
       "title": "Cold Lead Re-Engagement Sequence",
       "industry": "Real Estate",
-      "summary": "A lead stopped responding? They get 6 automated touches over 30 days with market updates, new listings that match what they want, and price drop alerts. You don't lift a finger.",
-      "outcomes": ["Reactivates dead pipeline"],
+      "summary": "Lead went quiet? A 6-touch sequence runs over 30 days: market updates, new listings matching their criteria, price drop alerts. Personalized. Automated. Agents consistently re-engage 30-50% of leads they'd written off.",
+      "outcomes": ["Reactivates 30-50% of dead pipeline"],
       "stack": ["Make.com", "Follow Up Boss", "OpenAI"],
       "priority": "high"
     },
     {
       "title": "AI Lead Qualification Chatbot",
       "industry": "Real Estate",
-      "summary": "Website or landing page chatbot that qualifies leads 24/7: asks about budget, location, timeline, financing status. Scores leads as hot/warm/cold and alerts the agent only for hot leads. Syncs to CRM automatically.",
-      "outcomes": ["Saves 5hrs/week on qualification"],
+      "summary": "Website chatbot qualifies every lead 24/7: budget, location, timeline, financing. Scores them hot, warm, or cold. Alerts the agent only for serious buyers. Syncs everything to the CRM automatically. Saves 5+ hours a week on manual qualification.",
+      "outcomes": ["5+ hours/week saved", "Only serious leads reach the agent"],
       "stack": ["Voiceflow", "Make.com", "OpenAI"],
       "priority": "high"
     },
     {
       "title": "Post-Showing Follow-Up Automation",
       "industry": "Real Estate",
-      "summary": "Right after a showing, they get a text thanking them and asking if they're ready to offer. No response in 48 hours? A second text goes out with a quick market comparison.",
-      "outcomes": ["Faster offer decisions"],
+      "summary": "Right after every showing, a text goes out: thank you, any questions, ready to offer? Silence for 48 hours? A follow-up fires with a quick market comparison. Keeps momentum without the agent having to chase.",
+      "outcomes": ["Faster offer decisions", "No lead left without a follow-up"],
       "stack": ["Make.com", "Twilio"]
     },
     {
       "title": "CRM Auto-Population from Lead Sources",
       "industry": "Real Estate",
-      "summary": "Every new lead from Zillow, Realtor.com, Instagram, and referrals automatically creates a contact in Follow Up Boss/Wise Agent — tagged by source, assigned a follow-up sequence, and alerted to the agent. Zero manual data entry.",
-      "outcomes": ["Eliminates manual CRM entry"],
+      "summary": "Every lead from Zillow, Realtor.com, Instagram, or referrals creates a CRM contact automatically. Tagged by source, assigned a follow-up sequence, and flagged to the agent. Manual data entry drops to zero.",
+      "outcomes": ["Zero manual CRM entry", "No lead falls through the cracks"],
       "stack": ["Make.com", "Follow Up Boss API"]
     },
     {
       "title": "AI Voice Agent for Inbound Inquiries",
       "industry": "Real Estate",
-      "summary": "AI answers calls from new inquiries 24/7, qualifies the lead (budget, timeline, pre-approval), books a callback with the agent, and texts a confirmation. Agent only speaks to pre-qualified, ready-to-talk leads.",
-      "outcomes": ["Zero missed opportunities"],
+      "summary": "AI answers inbound calls 24/7 and qualifies on budget, timeline, and pre-approval, books a callback, and texts a confirmation. By the time the agent speaks to a lead, they already know they're serious.",
+      "outcomes": ["Zero missed calls", "Pre-qualified leads only reach the agent"],
       "stack": ["VAPI", "ElevenLabs", "Make.com"]
     },
     {
       "title": "Listing Alert Automation for Buyer Leads",
       "industry": "Real Estate",
-      "summary": "When a new listing matches a buyer's saved criteria, an automated personalized SMS fires within minutes: \"New listing just hit matching your search — 3bed/2bath in [area] at $X. Want to schedule a showing? [link]\"",
-      "outcomes": ["First agent to respond wins"],
+      "summary": "New listing matches a buyer's criteria? A personalized SMS fires within minutes with the address, specs, price, and a showing request link. The agent who responds first wins, this makes sure that's always you.",
+      "outcomes": ["First response every time", "More showings booked"],
       "stack": ["Make.com", "MLS API", "Twilio"]
     },
     {
       "title": "Referral Request Automation",
       "industry": "Real Estate",
-      "summary": "30 days after closing, they get a congratulations message asking if they know anyone buying or selling. Runs automatically for every client you close, no manual work needed.",
-      "outcomes": ["Generates free warm leads"],
+      "summary": "30 days after every closing, a personalized congratulations message goes out, and asks if they know anyone buying or selling. Runs for every deal automatically. Turns happy clients into a steady referral source without lifting a finger.",
+      "outcomes": ["Consistent referral pipeline", "Zero manual outreach"],
       "stack": ["Make.com", "Twilio"]
     },
     {
       "title": "AI Chatbot for Website FAQ",
       "industry": "General",
-      "summary": "Trained on a business's actual services, pricing, and policies. Answers customer questions 24/7, captures lead info, and escalates to a human when needed. Works for both salon and real estate websites.",
-      "outcomes": ["24/7 lead capture"],
+      "summary": "Trained on your actual services, pricing, and policies. Answers questions 24/7, captures lead contact info, and escalates to a human when needed. Visitors get answers instantly, and you wake up to qualified leads in your inbox.",
+      "outcomes": ["24/7 lead capture", "Fewer repetitive enquiries"],
       "stack": ["Voiceflow", "OpenAI"]
     },
     {
       "title": "Google Review Response Automation",
       "industry": "General",
-      "summary": "Every new Google review gets an AI response in your voice, whether it's 5 stars or 1 star. You review it first, then it posts automatically. Keeps your profile looking active and engaged.",
-      "outcomes": ["Improves local SEO"],
+      "summary": "Every new Google review: 5 stars or 1 star, gets an AI-drafted response written in your voice. You approve it, then it posts. Your profile stays active and engaged without spending 20 minutes a week on copy.",
+      "outcomes": ["Stronger local SEO", "Professional responses on every review"],
       "stack": ["Make.com", "OpenAI", "Google Business API"]
     },
     {
       "title": "WhatsApp Business Automation",
       "industry": "General",
-      "summary": "Auto-responds to WhatsApp inquiries, sends appointment confirmations, shares service menus or property listings, and follows up after interactions. Particularly effective for UK market where WhatsApp is dominant.",
-      "outcomes": ["UK market advantage"],
+      "summary": "Auto-responds to WhatsApp enquiries, sends appointment confirmations, shares menus or listings, and follows up after every interaction. Built specifically for the UK market where WhatsApp is how clients actually communicate.",
+      "outcomes": ["Instant responses on WhatsApp", "Higher UK client engagement"],
       "stack": ["Make.com", "WhatsApp Business API"]
     }
   ]
