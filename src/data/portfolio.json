@@ -5,7 +5,7 @@
     {
       "title": "Missed Call Text-Back System",
       "industry": "Hair and Beauty",
-      "summary": "When a salon misses a call, an automated SMS fires within 60 seconds: \"Hey! Sorry we missed you. We'd love to help — book online here [link] or reply and we'll call you back.\" Captures leads that would otherwise call the next salon.",
+      "summary": "Missed a call? An SMS goes out within 60 seconds saying hey, we're sorry, book online or text us back. Captures leads that would otherwise go to the competition.",
       "outcomes": ["Recovers lost bookings"],
       "stack": ["Make.com", "Twilio"],
       "priority": "high"
@@ -13,14 +13,14 @@
     {
       "title": "No-Show Recovery Automation",
       "industry": "Hair and Beauty",
-      "summary": "When a client no-shows, an automated sequence fires: immediate SMS, follow-up 24hrs later, rebook offer 3 days later. Includes a special offer trigger if the client hasn't rebooked in 7 days.",
+      "summary": "Client didn't show up? Texts go out immediately, again the next day, then a rebook offer 3 days later. If they still don't book, a special discount offer kicks in after a week.",
       "outcomes": ["Recovers 20-30% of no-shows"],
       "stack": ["Make.com", "Twilio", "Vagaro API"]
     },
     {
       "title": "Automated Review Request System",
       "industry": "Hair and Beauty",
-      "summary": "2 hours after appointment completion, client receives an SMS: \"Thanks for visiting [Salon]! We'd love your feedback — [Google Review Link].\" Timing is key — 2hrs beats same-day and next-day in conversion.",
+      "summary": "Two hours after their appointment, they get a text asking for a Google review with a direct link. No review in 48 hours? A friendly follow-up reminder goes out. Gets 3-5x more reviews than asking in person.",
       "outcomes": ["3-5x more Google reviews"],
       "stack": ["Make.com", "Twilio"],
       "priority": "high"
@@ -28,21 +28,21 @@
     {
       "title": "Appointment Reminder Sequence",
       "industry": "Hair and Beauty",
-      "summary": "48hr reminder + 2hr reminder before every appointment. Includes a confirm/cancel button in the SMS. If cancelled, triggers an instant rebook offer and notifies the stylist to fill the slot.",
+      "summary": "Two days before and two hours before each appointment, they get a text. They can confirm or cancel right there. Cancel? They get an instant rebook offer and your stylist knows to find someone else for that slot.",
       "outcomes": ["Reduces no-shows by 40%"],
       "stack": ["Make.com", "Fresha/Vagaro"]
     },
     {
       "title": "Win-Back Campaign for Inactive Clients",
       "industry": "Hair and Beauty",
-      "summary": "Automatically identifies clients who haven't booked in 60 days and sends a personalized SMS: \"We miss you at [Salon]! It's been a while — here's 15% off your next visit: [book link].\" Runs on autopilot monthly.",
+      "summary": "Someone hasn't booked in 60 days? They get a text saying we miss them, here's 15% off your next visit with a booking link. Runs automatically every month on autopilot.",
       "outcomes": ["Reactivates lapsed clients"],
       "stack": ["Make.com", "Airtable"]
     },
     {
-      "title": "AI Receptionist — Inbound Call Handling",
+      "title": "AI Receptionist - Inbound Call Handling",
       "industry": "Hair and Beauty",
-      "summary": "AI voice agent answers calls 24/7, handles FAQs (hours, pricing, availability), books appointments directly into Vagaro/Fresha, and texts a booking confirmation. Fully trained on the salon's services and staff.",
+      "summary": "AI picks up every call 24/7, answers questions about hours and pricing, books appointments directly into your system, and texts a confirmation. It knows your services and staff inside out.",
       "outcomes": ["Answers 100% of calls"],
       "stack": ["VAPI", "ElevenLabs", "Make.com"]
     },
@@ -63,7 +63,7 @@
     {
       "title": "Speed-to-Lead AI Response System",
       "industry": "Real Estate",
-      "summary": "New lead from Zillow/Realtor.com triggers an AI SMS within 60 seconds: personalized to the property they inquired about, asks 3 qualifying questions (budget, timeline, pre-approved?), and routes hot leads to the agent instantly.",
+      "summary": "Lead comes in from Zillow? An AI SMS goes out in 60 seconds about that exact property, asks if they're pre-approved and on a timeline, then routes serious buyers straight to you.",
       "outcomes": ["21x higher conversion"],
       "stack": ["Make.com", "OpenAI", "Twilio"],
       "priority": "high"
@@ -71,7 +71,7 @@
     {
       "title": "Cold Lead Re-Engagement Sequence",
       "industry": "Real Estate",
-      "summary": "Leads that went cold (no response in 14+ days) enter an automated 6-touch sequence over 30 days: market updates, new listings matching their criteria, price drop alerts. Runs without the agent lifting a finger.",
+      "summary": "A lead stopped responding? They get 6 automated touches over 30 days with market updates, new listings that match what they want, and price drop alerts. You don't lift a finger.",
       "outcomes": ["Reactivates dead pipeline"],
       "stack": ["Make.com", "Follow Up Boss", "OpenAI"],
       "priority": "high"
@@ -87,7 +87,7 @@
     {
       "title": "Post-Showing Follow-Up Automation",
       "industry": "Real Estate",
-      "summary": "After every showing, automated SMS fires to the buyer: \"Thanks for viewing [address] today! Any questions? Ready to make an offer? [Book a call link].\" If no response in 48hrs, a second message goes out with a market comparison.",
+      "summary": "Right after a showing, they get a text thanking them and asking if they're ready to offer. No response in 48 hours? A second text goes out with a quick market comparison.",
       "outcomes": ["Faster offer decisions"],
       "stack": ["Make.com", "Twilio"]
     },
@@ -115,7 +115,7 @@
     {
       "title": "Referral Request Automation",
       "industry": "Real Estate",
-      "summary": "30 days after a successful closing, an automated personalized message goes to the buyer/seller: \"Congrats again on your new home! If you know anyone buying or selling, I'd love to help them too. [Referral link].\" Runs for every closed deal automatically.",
+      "summary": "30 days after closing, they get a congratulations message asking if they know anyone buying or selling. Runs automatically for every client you close, no manual work needed.",
       "outcomes": ["Generates free warm leads"],
       "stack": ["Make.com", "Twilio"]
     },
@@ -129,7 +129,7 @@
     {
       "title": "Google Review Response Automation",
       "industry": "General",
-      "summary": "AI automatically generates and posts personalized responses to every new Google review — positive and negative. Responses are written in the business owner's tone and voice, reviewed before posting.",
+      "summary": "Every new Google review gets an AI response in your voice, whether it's 5 stars or 1 star. You review it first, then it posts automatically. Keeps your profile looking active and engaged.",
       "outcomes": ["Improves local SEO"],
       "stack": ["Make.com", "OpenAI", "Google Business API"]
     },
