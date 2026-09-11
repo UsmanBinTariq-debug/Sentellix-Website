@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import landing from "@/data/landing.json";
 import site from "@/data/site.json";
 import { ArrowRight, Check, Zap, Workflow, Bot, Sparkles } from "lucide-react";
+import { BookCallButton } from "@/components/site-chrome";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,12 +34,7 @@ function Landing() {
               {landing.hero.subtitle}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                to={landing.hero.primaryCta.href}
-                className="inline-flex items-center gap-2 rounded-md bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground transition-transform hover:-translate-y-0.5"
-              >
-                {landing.hero.primaryCta.label} <ArrowRight className="h-4 w-4" />
-              </Link>
+              <BookCallButton size="lg" variant="accent" />
               <Link
                 to={landing.hero.secondaryCta.href}
                 className="inline-flex items-center rounded-md border border-white/20 px-5 py-3 text-sm font-medium text-navy-foreground transition-colors hover:bg-white/5"
@@ -131,12 +127,15 @@ function Landing() {
         <div className="mx-auto max-w-4xl px-6 py-20 text-center md:py-28">
           <h2 className="text-3xl font-bold md:text-4xl">{landing.finalCta.title}</h2>
           <p className="mx-auto mt-4 max-w-xl text-navy-muted">{landing.finalCta.subtitle}</p>
-          <Link
-            to="/contact"
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground"
-          >
-            {landing.finalCta.label} <ArrowRight className="h-4 w-4" />
-          </Link>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <BookCallButton size="lg" variant="accent" />
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-md border border-white/20 px-6 py-3 text-sm font-medium text-navy-foreground transition-colors hover:bg-white/5"
+            >
+              {landing.finalCta.label} <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
           <p className="mt-6 text-xs text-navy-muted">Or email us at {site.email}</p>
         </div>
       </section>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import site from "@/data/site.json";
 import { Mail, MessageCircle, Send, CheckCircle2 } from "lucide-react";
+import { BookCallButton } from "@/components/site-chrome";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -86,6 +87,15 @@ function ContactPage() {
           <p className="mt-4 max-w-2xl text-lg text-navy-muted">
             Tell us about the manual work eating your time. If we can help, we'll send a free audit. If we can't, we'll tell you straight.
           </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <BookCallButton size="lg" variant="accent" />
+            <a
+              href={`mailto:${site.email}`}
+              className="inline-flex items-center rounded-md border border-white/20 px-5 py-3 text-sm font-medium text-navy-foreground transition-colors hover:bg-white/5"
+            >
+              Email us instead
+            </a>
+          </div>
         </div>
       </section>
 
@@ -109,6 +119,11 @@ function ContactPage() {
                 <li>2. If we're a fit, we send a 30 minute call link.</li>
                 <li>3. On the call, you get a free workflow audit.</li>
               </ol>
+            </div>
+            <div className="rounded-xl border border-border bg-secondary p-5">
+              <div className="text-xs font-semibold uppercase tracking-wider text-accent mb-2">Prefer to skip the form?</div>
+              <p className="text-sm text-muted-foreground mb-4">Book a free 30-minute discovery call directly on our calendar.</p>
+              <BookCallButton size="default" variant="outline" className="w-full" />
             </div>
           </aside>
 

@@ -11,7 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { Header, Footer } from "@/components/site-chrome";
+import { Header, Footer, FloatingCTA } from "@/components/site-chrome";
 
 function NotFoundComponent() {
   return (
@@ -125,8 +125,8 @@ function RootComponent() {
           <Outlet />
         </main>
         <Footer />
+        <FloatingCTA />
       </div>
     </QueryClientProvider>
   );
 }
-
